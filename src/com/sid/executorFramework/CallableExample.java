@@ -15,9 +15,9 @@ public class CallableExample
         List<Future<Integer>> resultList = new ArrayList<>();
         Random random = new Random();
 
-        for (int i=0; i<4; i++) {
+        for (int i=0; i<10; i++) {
             Integer number = random.nextInt(10);
-            System.out.println(number);
+            //System.out.println(number);
             FactorialCalculator calculator  = new FactorialCalculator(number);
             Future<Integer> result = executor.submit(calculator);
             resultList.add(result);

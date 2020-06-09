@@ -20,6 +20,7 @@ public class FactorialCalculator implements Callable<Integer> {
                 TimeUnit.MILLISECONDS.sleep(2000);
             }
         }
+        System.out.println("This is executed on " + Thread.currentThread().getName());
         System.out.println("Result for number - " + number + " -> " + result);
         return result;
     }
